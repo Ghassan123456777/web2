@@ -19,13 +19,13 @@ document.getElementById('analyzeButton').addEventListener('click', function () {
   // Display the result
   const resultDiv = document.getElementById('result');
   if (impactForce < 100) {
-    resultDiv.textContent = Weak Impact Force: ${impactForce.toFixed(2)} N;
+    resultDiv.textContent = `Weak Impact Force: ${impactForce.toFixed(2)} N`;
     resultDiv.className = 'result weak';
   } else if (impactForce < 300) {
-    resultDiv.textContent = Medium Impact Force: ${impactForce.toFixed(2)} N;
+    resultDiv.textContent = `Medium Impact Force: ${impactForce.toFixed(2)} N`;
     resultDiv.className = 'result medium';
   } else {
-    resultDiv.textContent = Strong Impact Force: ${impactForce.toFixed(2)} N;
+    resultDiv.textContent = `Strong Impact Force: ${impactForce.toFixed(2)} N`;
     resultDiv.className = 'result strong';
   }
 });
